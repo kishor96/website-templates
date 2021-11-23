@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Inter", sans-serif;
+        }
+
+        nav.navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 30px 100px;
+            background: white;
+            position: fixed;
+            width: 100%;
+            z-index: 2;
+        }
+
+        .navbar.logo_area {
+            width: 65%;
+        }
+
+
+
+        .nav_menu_area button {
+            color: white;
+            background-color: #6C55F9;
+            border-color: transparent;
+            padding: 10px 26px;
+            border-radius: 9px;
+        }
+
+        .nav_menu_area button {
+            color: rgb(255, 135, 67);
+            background-color: white;
+            border-color: rgb(255, 135, 67);
+            border-radius: 50px;
+        }
+
+        .nav_menu_area {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        a.site_logo {
+            text-decoration: none;
+            font-size: 23px;
+            letter-spacing: 2px;
+            color: #fff;
+        }
+
+        .nav_menu_area a {
+            font-size: 21px;
+            color: black;
+            text-decoration: none;
+            font-family: "Inter", sans-serif;
+        }
+
+        .banner_content {
+            padding: 119px 46px;
+            height: 800px;
+            background: white;
+            border: none;
+            margin-bottom: 40px;
+
+        }
+
+        .banner_image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img.review {
+            position: absolute;
+            right: 36%;
+            width: 19%;
+            bottom: -25%;
+            border-radius: 17px;
+            z-index: 0;
+        }
+
+        img.paid {
+            position: absolute;
+            width: 15%;
+            top: 99%;
+            right: 13px;
+            border-radius: 17px;
+            z-index: 0;
+        }
+
+        img.order {
+            /* top: 188%; */
+            position: absolute;
+            left: 54%;
+            top: 60%;
+            width: 13%;
+            border-radius: 17px;
+            z-index: 0;
+        }
+
+        .heading h1 {
+            font-size: 60px;
+            line-height: 60px;
+            letter-spacing: -2px;
+        }
+
+        .heading p {
+            text-transform: capitalize;
+            font-size: 20px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+        }
+
+        .heading span {
+            font-size: 27px;
+            color: rgb(25, 30, 36);
+            line-height: 34px;
+
+        }
+
+        button.explore_button {
+
+            font-size: 16px;
+            background-color: rgba(2, 1, 1, 0);
+            font-weight: 600;
+            padding: 10px 20px;
+            line-height: 24px;
+            margin: 0px 10px 0px 0px;
+            border: 2px solid rgb(255, 135, 67);
+            border-radius: 27px;
+            color: rgb(255, 135, 67);
+            margin-top: 20px;
+        }
+
+        button.sign_up {
+            font-size: 16px;
+            background-color: rgba(2, 1, 1, 0);
+            font-weight: 600;
+            padding: 11px 70px;
+            line-height: 24px;
+            margin: 0px 10px 0px 0px;
+            border: 2px solid rgb(255, 135, 67);
+            border-radius: 27px;
+            color: white;
+            background-color: rgb(255, 135, 67);
+            margin-top: 20px;
+        }
+
+        .content1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .services {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 44px 100px;
+        }
+
+        .contents {
+            margin-left: 15px;
+        }
+
+        .servicesas {
+            background-image: linear-gradient(to right, #012A58, #11509F);
+        }
+
+        .contents h1 {
+            color: white;
+            font-size: 20px;
+        }
+
+        .contents p {
+            font-size: 18px;
+            margin-top: 10px;
+            color: white;
+            font-weight: 300;
+            line-height: 24px;
+        }
+
+        .material-icons {
+            font-family: 'Material Icons';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            padding: 0px 20px;
+            background-color: white;
+            width: 62px;
+            display: flex;
+            align-items: center;
+            height: 60px;
+            border-radius: 50px;
+        }
+
+        .Real_people_content {
+            padding: 85px 100px;
+        }
+
+        .values {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .values_count {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .real_content h1 {
+            font-size: 40px;
+            line-height: 45px;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .real_content p {
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            line-height: 34px;
+            padding: 1px 330px;
+            margin-bottom: 50px;
+        }
+
+        .about_us {
+            padding: 135px 100px;
+            background-color: #EDF1FC;
+        }
+
+        .content_about {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .about_us_content {
+            margin-left: 180px;
+        }
+
+        .about_us_content h1 {
+            font-size: 40px;
+            line-height: 51px;
+            margin-top: 17px;
+        }
+
+        .about_us_content span {
+
+            font-size: 21px;
+            line-height: 34px;
+        }
+
+        .discover button {
+            padding: 14px 50px;
+            border-radius: 50px;
+            color: white;
+            font-size: 20px;
+            font-weight: 600;
+            background-color: rgb(255, 135, 67);
+            border-color: transparent;
+            margin-top: 32px;
+        }
+
+        .featured {
+            padding: 100px 100px;
+            background-color: #fbfbfb;
+        }
+
+        .featured_content h3 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(84, 89, 95);
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        .featured_content h1 {
+            display: flex;
+            justify-content: center;
+            margin-top: 21px;
+            line-height: 48px;
+            font-size: 40px;
+        }
+
+        .blogs_conrenr {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .blogs {
+            display: block;
+            margin: 0 auto;
+            padding: 42px 35px;
+            max-width: 310px;
+            background-color: #fff;
+            color: #2D2B3A;
+            border-radius: 24px;
+            box-shadow: 0 4px 16px rgb(100 95 136 / 16%);
+            margin-bottom: 40px;
+        }
+
+        .blog_content h1 {
+            font-size: 28px;
+        }
+
+        .icons i {
+            margin-left: -18px;
+        }
+
+        .banner_imfsd {
+            background: url(img/banner_imgs.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 109px 136px;
+        }
+
+        .banner_start {
+            background-color: #EDF1FC;
+            padding: 111px 100px;
+        }
+
+        .banner_conenr h1 {
+            display: flex;
+            justify-content: center;
+            font-size: 50px;
+        }
+
+        .banner_conenr p {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 23px;
+            margin-top: 10px;
+        }
+
+        .buttons_baner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .testimonial {
+            padding: 111px 100px;
+            background-color: #EDF1FC;
+        }
+
+        .testimonial_content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .Faq {
+            padding: 100px 100px;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .faq_content {
+            width: 27%;
+        }
+
+
+        .footer {
+            display: flex;
+            padding: 40px 48px;
+        }
+
+        .footer_content {
+            width: 50%;
+        }
+
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 24px;
+        }
+
+        .contetnt1 h1 {
+            font-size: 24px;
+            margin-top: 15px;
+        }
+
+
+        img.gpay {
+            margin-right: 11px;
+            width: 150px;
+        }
+
+        img.appstore {
+            width: 156px;
+            margin-right: 15px;
+        }
+
+        .icons_menu p {
+            font-size: 17px;
+            margin-top: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar logo_area">
+            <img src="img/logo.png">
+        </div>
+        <div class="nav_menu_area">
+            <a href="#" class="navManu_items" style="color:rgb(255, 135, 67) !important;">Home</a>
+            <a href="#" class="navManu_items">About</a>
+            <a href="#" class="navManu_items">Services</a>
+            <a href="#" class="navManu_items">Programs</a>
+            <a href="#" class="navManu_items">Contact Us</a>
+            <button href="#">Login</button>
+            <button href="#" class="fill">Sign up</button>
+        </div>
+    </nav>
+
+    <div class="banner_content">
+        <div class="banner_image">
+            <div class="heading">
+                <p>WELCOME TO MOXPAY</p>
+                <h1>The Smart Way for Online Payment Solution.</h1>
+                <span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
+                    mattis,
+                    pulvinar dapibus leo.
+                </span>
+                <div class="button_banner">
+                    <button class="explore_button">Explore Business Solution</button>
+                    <button class="sign_up">Sign up now</button>
+                </div>
+            </div>
+            <div>
+                <img src="img/bannerimg.png">
+                <div class="item_img">
+                    <img class="review" src="img/review.png">
+                    <img class="order" src="img/Order.png">
+                    <img class="paid" src="img/Paid.png">
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="servicesas">
+        <div class="services">
+            <div class="content1">
+                <i class="material-icons">add_shopping_cart</i>
+                <div class="contents">
+                    <h1>Ecommerce</h1>
+                    <p>Imperdiet fusce pede nec ipsum quis placerat nunc eros ante risus laoreet</p>
+                </div>
+            </div>
+            <div class="content1">
+                <i class="material-icons">receipt</i>
+                <div class="contents">
+                    <h1>Invoicing</h1>
+                    <p>Imperdiet fusce pede nec ipsum quis placerat nunc eros ante risus laoreet</p>
+                </div>
+            </div>
+            <div class="content1">
+                <i class="material-icons">event_available</i>
+                <div class="contents">
+                    <h1>
+                        Ticket & Event</h1>
+                    <p>Imperdiet fusce pede nec ipsum quis placerat nunc eros ante risus laoreet</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="Real_people_content">
+        <div class="real_content">
+            <h1>
+                Real People. Real Relationships.
+            </h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis,
+                pulvinar dapibus leo.
+            </p>
+
+        </div>
+        <div>
+
+            <div class="values_count">
+                <div class="values">
+                    <div class="counts">
+                        <i class="material-icons">perm_contact_calendar</i>
+
+                    </div>
+                    <div>
+                        <h1>457,000
+                            <span>+</span>
+                        </h1>
+                        <p>Happy Client</p>
+                    </div>
+
+                </div>
+
+                <div class="values">
+                    <div class="counts">
+                        <i class="material-icons">perm_contact_calendar</i>
+
+                    </div>
+                    <div>
+                        <h1>457,000
+                            <span>+</span>
+                        </h1>
+                        <p>Happy Client</p>
+                    </div>
+
+                </div>
+
+                <div class="values">
+                    <div class="counts">
+                        <i class="material-icons">perm_contact_calendar</i>
+
+                    </div>
+                    <div>
+                        <h1>457,000
+                            <span>+</span>
+                        </h1>
+                        <p>Happy Client</p>
+                    </div>
+
+                </div>
+
+                <div class="values">
+                    <div class="counts">
+                        <i class="material-icons">perm_contact_calendar</i>
+
+                    </div>
+                    <div>
+                        <h1>457,000
+                            <span>+</span>
+                        </h1>
+                        <p>Happy Client</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="about_us">
+        <div class="content_about">
+            <div class="image_aboutus">
+                <img src="img/about_us-1.png">
+
+            </div>
+            <div class="about_us_content">
+                <h4>ABOUT US</h4>
+                <h1>Integrate your shopping cart in a matter of minutes.</h1>
+                <span>Aliquam pretium dictumst imperdiet potenti tempor sit molestie fringilla platea duis
+                    commodo</span>
+                <div class="discover">
+                    <button>Discover More</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="featured">
+        <div class="featured_content">
+            <h3>FEATURED</h3>
+            <h1>Smart Solution for Your Payment</h1>
+
+        </div>
+        <div class="blogs_conrenr">
+            <div class="blogs">
+                <div class="icons">
+                    <i class="material-icons">subscriptions</i>
+                </div>
+                <div class="blog_content">
+                    <h1>Payment Methods</h1>
+                    <p>Metus ridiculus maximus est facilisi dolor ante penatibus cursus litora</p>
+                </div>
+            </div>
+            <div class="blogs">
+                <div class="icons">
+                    <i class="material-icons">subscriptions</i>
+                </div>
+                <div class="blog_content">
+                    <h1>Payment Methods</h1>
+                    <p>Metus ridiculus maximus est facilisi dolor ante penatibus cursus litora</p>
+                </div>
+            </div>
+            <div class="blogs">
+                <div class="icons">
+                    <i class="material-icons">subscriptions</i>
+                </div>
+                <div class="blog_content">
+                    <h1>Payment Methods</h1>
+                    <p>Metus ridiculus maximus est facilisi dolor ante penatibus cursus litora</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="blogs_conrenr">
+            <div class="blogs">
+                <div class="icons">
+                    <i class="material-icons">subscriptions</i>
+                </div>
+                <div class="blog_content">
+                    <h1>Payment Methods</h1>
+                    <p>Metus ridiculus maximus est facilisi dolor ante penatibus cursus litora</p>
+                </div>
+            </div>
+            <div class="blogs">
+                <div class="icons">
+                    <i class="material-icons">subscriptions</i>
+                </div>
+                <div class="blog_content">
+                    <h1>Payment Methods</h1>
+                    <p>Metus ridiculus maximus est facilisi dolor ante penatibus cursus litora</p>
+                </div>
+            </div>
+            <div class="blogs">
+                <div class="icons">
+                    <i class="material-icons">subscriptions</i>
+                </div>
+                <div class="blog_content">
+                    <h1>Payment Methods</h1>
+                    <p>Metus ridiculus maximus est facilisi dolor ante penatibus cursus litora</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="banner_imfsd" style="height: 70vh;">
+        <div class="banner_conenr">
+            <h1>Leading, Trusted. Enabling growth.</h1>
+            <p>Hendrerit eget tincidunt elit ex ullamcorper condimentum volutpat cubilia nam</p>
+
+        </div>
+        <div class="buttons_baner">
+            <button class="explore_button">Explore Business Solution</button>
+            <button class="sign_up">Sign up Now</button>
+        </div>
+
+    </div>
+
+    <div class="testimonial">
+        <div class="testimonial_content">
+            <div class="img_testimonial">
+                <img src="img/testimonial.png">
+
+            </div>
+            <div class="test_contnet">
+                <h3>TESTIMONIAL</h3>
+                <h1>What They Say About Us.</h1>
+                <p>Aliquam pretium dictumst imperdiet potenti tempor.</p>
+
+            </div>
+            <div class="testimonial_slider">
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="Faq">
+        <div class="faq_content">
+            <h3>FAQ</h3>
+            <h1>Frequently Ask Questions</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis,
+                pulvinar dapibus leo.</p>
+
+        </div>
+        <div class="accordion">
+            <h1>accordion</h1>
+
+        </div>
+
+    </div>
+
+    <div class="banner_start" style="height: 60vh;">
+        <div class="banner_conenr">
+            <h1>Leading, Trusted. Enabling growth.</h1>
+            <p>Hendrerit eget tincidunt elit ex ullamcorper condimentum volutpat cubilia nam</p>
+
+        </div>
+        <div class="buttons_baner">
+            <button class="explore_button">Explore Business Solution</button>
+            <button class="sign_up">Sign up Now</button>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="footer_content">
+            <div class="contetnt1">
+                <img src="img/logo.png">
+                <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h1>
+            </div>
+            <div class="button">
+                <img class="gpay" src="img/Google-Play_button.png">
+                <img class="appstore" src="img/App-Store_button.png">
+            </div>
+        </div>
+        <div class="footer_content">
+            <div class="contetnt2">
+                <h1>Company</h1>
+            </div>
+            <div class="icons_menu">
+                <p>About us </p>
+                <p>leadership</p>
+                <p>carriewr</p>
+                <p>blogs article</p>
+                <p>press release</p>
+                <p>legal notice</p>
+            </div>
+        </div>
+        <div class="footer_content">
+            <div class="contetnt3">
+                <h1>Company</h1>
+            </div>
+            <div class="icons_menu">
+                <p>About us </p>
+                <p>leadership</p>
+                <p>carriewr</p>
+                <p>blogs article</p>
+                <p>press release</p>
+                <p>legal notice</p>
+            </div>
+        </div>
+        <div class="footer_content">
+            <div class="contetnt4">
+                <h1>Company</h1>
+            </div>
+            <div class="icons_menu">
+                <p>About us </p>
+                <p>leadership</p>
+                <p>carriewr</p>
+                <p>blogs article</p>
+                <p>press release</p>
+                <p>legal notice</p>
+            </div>
+        </div>
+        <div class="footer_content">
+            <div class="contetnt5">
+                <h1>Company</h1>
+            </div>
+            <div class="icons_menu">
+                <p>About us </p>
+                <p>leadership</p>
+                <p>carriewr</p>
+                <p>blogs article</p>
+                <p>press release</p>
+                <p>legal notice</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

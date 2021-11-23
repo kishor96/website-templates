@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Home Task</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Work Sans", sans-serif;
+        }
+
+        .headings {
+            width: 39%;
+        }
+
+        nav.navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 30px 100px;
+            background: white;
+            position: fixed;
+            width: 100%;
+            z-index: 2;
+        }
+
+        .navbar.logo_area {
+            width: 65%;
+        }
+
+
+
+        .nav_menu_area button {
+            color: white;
+            background-color: #6C55F9;
+            border-color: transparent;
+            padding: 10px 26px;
+            border-radius: 9px;
+        }
+
+        .nav_menu_area button {
+            color: white;
+            background-color: #6C55F9;
+            border-color: transparent;
+        }
+
+        .nav_menu_area {
+            width: 70%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        a.site_logo {
+            text-decoration: none;
+            font-size: 23px;
+            letter-spacing: 2px;
+            color: #fff;
+        }
+
+        .nav_menu_area a {
+            font-size: 16px;
+            color: rgba(48, 49, 49, 0.7);
+            text-decoration: none;
+        }
+
+
+        .bg_overly {
+            width: 100%;
+            height: 100%;
+            background: rgba(48, 49, 49, 0.7);
+        }
+
+
+        .banner_title {
+            color: #fff;
+        }
+
+        .about_cotent_section {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .section_title {
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            font-size: 28px;
+            letter-spacing: 1px;
+        }
+
+
+        .banner_container {
+            padding: 119px 46px;
+            height: 800px;
+            background: white;
+            border: none;
+            margin-bottom: 40px;
+
+        }
+
+
+
+        .about_cotent {
+            width: 50%;
+        }
+
+        .about_img {
+            width: 50%;
+        }
+
+        .contents {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 57px 68px;
+        }
+
+        .headings h1 {
+            font-size: 40px;
+            font-weight: 500;
+            color: #645F88;
+            line-height: 1.2;
+            margin-top: 20px;
+        }
+
+        .headings p {
+            font-size: 21px;
+            font-weight: 300;
+            color: #645F88;
+            margin-top: 25px;
+            line-height: 30px;
+            line-height: 1.2;
+        }
+
+        .headings button {
+            padding: 8px 30px;
+            background-color: #6C55F9;
+            border-radius: 20px;
+            font-size: 17px;
+            font-family: "Work Sans", sans-serif;
+            font-weight: 700;
+            margin-top: 25px;
+            border-color: transparent;
+            color: white;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+
+        .headings button2 {
+            padding: 8px 30px;
+            background-color: #6C55F9;
+            border-radius: 20px;
+            font-size: 17px;
+            font-family: "Work Sans", sans-serif;
+            font-weight: 700;
+            margin-top: 25px;
+            border-color: transparent;
+            color: white;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+
+        .second_section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+
+        }
+
+        .inner_section {
+            padding: 12px 108px;
+        }
+
+        .seo_consultancy {
+            text-align: center;
+            padding: 30px;
+        }
+
+
+        .seo_consultancy_img {
+            display: flex;
+            justify-content: center;
+        }
+
+        .seo_consultancy button {
+            padding: 10px 24px;
+            background-color: #6C55F9;
+            border-color: transparent;
+            font-size: 15px;
+            border-radius: 8px;
+            font-weight: 700;
+            margin-top: 35px;
+            color: white;
+        }
+
+        .seo_consultancy h1 {
+            font-size: 25px;
+            font-weight: 500;
+            color: grey;
+            margin-top: 10px;
+        }
+
+        .seo_consultancy p {
+            font-size: 15px;
+            font-weight: 300;
+            color: grey;
+            margin-top: 10px;
+        }
+
+        .headings h4 {
+            font-size: 18px;
+            font-family: montserrat;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: #898798;
+            font-family: "Work Sans", sans-serif;
+        }
+
+        .section_content p {
+            text-align: center;
+            color: #645F88;
+            line-height: 13px;
+        }
+
+        .section_content h1 {
+            text-align: center;
+            color: #645F88;
+            margin-top: 10px;
+        }
+
+        .icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 100px;
+        }
+
+        .line {
+            display: block;
+            width: 59px;
+            height: 3px;
+            border-radius: 40px;
+            background-color: #6C55F9;
+            padding: auto;
+            margin: 30px auto;
+        }
+
+        .line2 {
+            display: block;
+            width: 62px;
+            height: 4px;
+            border-radius: 40px;
+            background-color: #6C55F9;
+            padding: auto;
+            margin-top: 15px;
+        }
+
+
+        .seo_consultancy h4 {
+            color: #645F88;
+            font-size: 19px;
+            margin-top: 15px;
+            justify-content: center;
+        }
+
+        .post_date {
+            font-size: 14px;
+            color: #645F88;
+            margin-top: 7px;
+        }
+
+        .seo_consultancy h5 {
+            color: #645F88;
+            font-size: 15px;
+            margin-top: 20px;
+        }
+
+        .seo_button {
+            padding: 10px 24px;
+            background-color: #6C55F9;
+            border-color: transparent;
+            font-size: 15px;
+            border-radius: 8px;
+            font-weight: 700;
+            margin-top: 35px;
+            color: white;
+            margin-bottom: 45px;
+        }
+
+        .seo_btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .services.mt-2 {
+            margin-top: 80px;
+        }
+
+        .card_pricing {
+            display: block;
+            margin: 0 auto;
+            padding: 32px 20px;
+            max-width: 310px;
+            background-color: #fff;
+            color: #2D2B3A;
+            text-align: center;
+            border-radius: 4px;
+            box-shadow: 0 4px 16px rgb(100 95 136 / 16%);
+        }
+
+        .card_pricingmarked {
+            background-color: #6C55F9 !important;
+            color: #fff;
+            box-shadow: 0 4px 16px rgb(107 85 249 / 50%);
+            display: block;
+            margin: 0 auto;
+            padding: 32px 20px;
+            max-width: 310px;
+            background-color: #fff;
+            color: #2D2B3A;
+            text-align: center;
+            border-radius: 4px;
+
+        }
+
+        .basic {
+            margin-top: 8px;
+            margin-bottom: 12px;
+            color: #898798;
+            font-size: 26px;
+        }
+
+        .card_pricing h5 {
+            font-size: 43px;
+        }
+
+        .card_pricing span {
+            color: #6C55F9;
+            text-transform: uppercase;
+            font-size: 25px;
+        }
+
+        .card_pricingmarked span {
+            color: #6C55F9;
+            text-transform: uppercase;
+            font-size: 25px;
+        }
+
+
+        .grey_line {
+            border-top: 2px solid #DDDBEF;
+            border-bottom: 1px solid #DDDBEF;
+            font-weight: 500;
+            margin-top: 12px;
+        }
+
+        .card_pricing button {
+            padding: 10px 58px;
+            background-color: darkgrey;
+            border-color: darkgray;
+            font-size: 20px;
+            font-weight: 700;
+            border-radius: 7px;
+            color: white;
+            margin-top: 14px;
+            border-color: transparent;
+        }
+
+
+        .card_pricingmarked button {
+            padding: 10px 58px;
+            background-color: darkgrey;
+            border-color: darkgray;
+            font-size: 20px;
+            font-weight: 700;
+            border-radius: 7px;
+            color: white;
+            margin-top: 14px;
+        }
+
+        .analyrics span {
+            font-size: 15px;
+            color: grey;
+            margin-top: 10px;
+        }
+
+        .analyrics {
+            margin-top: 13px;
+        }
+
+        .input_field {
+            display: flex;
+            justify-content: center;
+
+            padding: 36px 53px;
+        }
+
+        .input_field input {
+            padding: 24px 20px;
+            left: 10px;
+            border-radius: 18px;
+            width: 45%;
+        }
+
+        .input_field button {
+            color: #fff;
+            background-color: #35bb78;
+            border-color: transparent;
+            padding: 15px 40px;
+            border-radius: 19px;
+            font-size: 18px;
+            font-weight: 500;
+            margin-top: 6px;
+            position: absolute;
+            right: 30%;
+        }
+
+        .footer {
+            background-color: grey;
+            padding: 72px 100px;
+        }
+
+        .content_footer {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+
+        .footer_header h1 {
+            color: white;
+            font-weight: 500;
+        }
+
+        .footer_header p {
+            font-size: 23px;
+            padding: 18px 0px;
+        }
+
+        .fa {
+            padding: 10px;
+            font-size: 19px;
+            width: 40px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 50px;
+            margin: 5px 2px;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-facebook {
+            background: white;
+            color: grey;
+        }
+
+        .fa-twitter {
+            background: white;
+            color: grey;
+        }
+
+        .fa-google {
+            background: white;
+            color: grey;
+        }
+
+
+        .fa-youtube {
+            background: white;
+            color: grey;
+        }
+
+        .fa-instagram {
+            background: white;
+            color: grey;
+        }
+
+        .post_date a {
+            margin-left: 15px;
+        }
+
+
+        .footer_content h1 {
+            color: white;
+            font-weight: 500;
+        }
+
+        .contact_us p {
+            margin-top: 15px;
+        }
+
+        .footer_content p {
+            margin-top: 15px;
+        }
+
+        .footer_content {
+            margin-left: 15px;
+        }
+
+        .footer_content input {
+            margin-top: 18px;
+            padding: 13px 10px;
+            border-radius: 10px;
+            border-color: transparent;
+        }
+
+        .card_pricingmarked h5 {
+            font-size: 40px;
+            color: white;
+        }
+
+        .card_pricingmarked span {
+            color: white;
+        }
+
+        .seo_consultancy_img i {
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            border-radius: 50%;
+            text-align: center;
+            background-color: #fff;
+            color: #6C55F9;
+            font-size: 24px;
+            box-shadow: 0 2px 4px rgb(95 92 120 / 16%);
+        }
+
+
+
+
+
+        .analyrics span {
+            margin-left: 10px;
+        }
+
+        .footer_content button {
+            margin-top: 22px;
+            color: #fff;
+            background-color: #35bb78;
+            border-color: transparent;
+            padding: 10px 56px;
+            border-radius: 10px;
+            font-size: 17px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar logo_area">
+            <a href="#" class="site_logo" style="color: black; font-weight: 700;">SEO<span
+                    style="color: #6C55F9;">Gram</span></a>
+        </div>
+        <div class="nav_menu_area">
+            <a href="#" class="navManu_items" style="color:#6C55F9 !important;">Home</a>
+            <a href="#" class="navManu_items">About</a>
+            <a href="#" class="navManu_items">Services</a>
+            <a href="#" class="navManu_items">Programs</a>
+            <a href="#" class="navManu_items">Contact Us</a>
+            <button href="#">Free analysis</button>
+        </div>
+    </nav>
+
+    <div class="banner_container">
+        <div class="content">
+            <div class="heading">
+                <div class="contents">
+                    <div class="headings">
+                        <h1 class="mt-2">Let's Check and Optimize<br> your website!</h1>
+                        <div class="line2"></div>
+                        <p class="mt-2">Ignite the most powerfull growth engine you have ever built for your company</p>
+                        <button>watch video<i class="material-icons">play_circle_outline</i></button>
+
+                    </div>
+                    <div class="img">
+                        <img src="img/banner_image_1.svg" width="500px">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="icons">
+            <i class="material-icons">arrow_downward</i>
+        </div>
+    </div>
+
+    <div class="inner_section">
+        <div class="second_section">
+            <div class="seo_consultancy">
+                <div class="seo_consultancy_img">
+                    <img src="img/service-1.svg">
+                </div>
+
+                <h1>SEO Consultancy</h1>
+                <p>We help you define your SEO objective & develop a realistic strategy with you</p>
+                <button>Read More</button>
+
+            </div>
+            <div class="seo_consultancy">
+                <div class="seo_consultancy_img">
+                    <img src="img/service-1.svg">
+                </div>
+                <h1>SEO Consultancy</h1>
+                <p>We help you define your SEO objective & develop a realistic strategy with you</p>
+                <button>Read More</button>
+
+            </div>
+            <div class="seo_consultancy">
+                <div class="seo_consultancy_img">
+                    <img src="img/service-1.svg">
+                </div>
+                <h1>SEO Consultancy</h1>
+                <p>We help you define your SEO objective & develop a realistic strategy with you</p>
+                <button>Read More</button>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="banner_container">
+        <div class="content">
+            <div class="heading">
+                <div class="contents">
+                    <div class="headings">
+                        <h4>About us</h4>
+                        <h1 class="mt-2">The number #1 SEO Service <br>Company</h1>
+                        <div class="line2"></div>
+                        <p class="mt-2">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+
+                            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.</p>
+                        <button class="seo_consultancy">Read More</button>
+                    </div>
+                    <div class="img">
+                        <img src="img/about_frame.png" width="500px">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="services mt-2">
+        <div class="section_content">
+            <h1>Check your Website SEO</h1>
+            <div class="input_field">
+                <input type="text" placeholder="E g: Domain Name" />
+                <button>Check Now</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="services mt-2">
+        <div class="section_content">
+            <p>OUR SERVICES</p>
+            <h1>How SEO Team Can Help</h1>
+        </div>
+        <div class="line"></div>
+        <div class="inner_section">
+            <div class="second_section">
+                <div class="seo_consultancy">
+                    <div class="seo_consultancy_img">
+
+                        <i class="material-icons">apartment</i>
+                    </div>
+                    <h5>OnSite SEO</h5>
+                    <p>We analyse your website's structure, internal architecture & other key</p>
+                </div>
+                <div class="seo_consultancy">
+                    <div class="seo_consultancy_img">
+                        <i class="material-icons">apartment</i>
+                    </div>
+                    <h5>OnSite SEO</h5>
+                    <p>We analyse your website's structure, internal architecture & other key</p>
+
+
+                </div>
+                <div class="seo_consultancy">
+                    <div class="seo_consultancy_img">
+                        <i class="material-icons">apartment</i>
+                    </div>
+                    <h5>OnSite SEO</h5>
+                    <p>We analyse your website's structure, internal architecture & other key</p>
+
+                </div>
+                <div class="seo_consultancy">
+                    <div class="seo_consultancy_img">
+                        <i class="material-icons">apartment</i>
+                    </div>
+                    <h5>OnSite SEO</h5>
+                    <p>We analyse your website's structure, internal architecture & other key</p>
+
+                </div>
+
+            </div>
+
+            <div class="second_section">
+                <div class="seo_consultancy">
+                    <div class="seo_consultancy_img">
+                        <i class="material-icons">apartment</i>
+                    </div>
+                    <h5>OnSite SEO</h5>
+                    <p>We analyse your website's structure, internal architecture & other key</p>
+
+                </div>
+                <div class="seo_consultancy">
+                    <div class="seo_consultancy_img">
+                        <i class="material-icons">apartment</i>
+                    </div>
+                    <h5>OnSite SEO</h5>
+                    <p>We analyse your website's structure, internal architecture & other key</p>
+
+                </div>
+                <div class="seo_consultancy">
+                    <div class="seo_consultancy_img">
+                        <i class="material-icons">apartment</i>
+                    </div>
+                    <h5>OnSite SEO</h5>
+                    <p>We analyse your website's structure, internal architecture & other key</p>
+
+                </div>
+                <div class="seo_consultancy">
+                    <div class="seo_consultancy_img">
+                        <i class="material-icons">apartment</i>
+                    </div>
+                    <h5>OnSite SEO</h5>
+                    <p>We analyse your website's structure, internal architecture & other key</p>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="services mt-2">
+        <div class="section_content">
+            <p>PRICING PLAN</p>
+            <h1>Choose plan the right for you</h1>
+        </div>
+        <div class="line"></div>
+        <div class="inner_section">
+            <div class="second_section">
+                <div class="card_pricing">
+                    <div class="basic">
+                        <p>Basic</p>
+                    </div>
+
+                    <h5>$ 39.99</h5>
+                    <span>PER MONTH</span>
+                    <div class="grey_line">
+                    </div>
+                    <div class="analyrics">
+                        25 Analytics<span>Campaign</span>
+                    </div>
+                    <div class="analyrics">
+                        1,300 Change<span>Keywords</span>
+                    </div>
+                    <div class="analyrics">
+                        Social Media<span>Reviews</span>
+                    </div>
+                    <div class="analyrics">
+                        1 Free<span>Optimization</span>
+                    </div>
+                    <div class="analyrics">
+                        24/7 <span>Support</span>
+                    </div>
+
+                    <div class="grey_line">
+                    </div>
+                    <button>Subscribe</button>
+
+                </div>
+
+                <div class="card_pricingmarked">
+                    <div class="basic">
+                        <p>Basic</p>
+                    </div>
+
+                    <h5>$ 39.99</h5>
+                    <span>PER MONTH</span>
+                    <div class="grey_line">
+                    </div>
+                    <div class="analyrics">
+                        25 Analytics<span>Campaign</span>
+                    </div>
+                    <div class="analyrics">
+                        1,300 Change<span>Keywords</span>
+                    </div>
+                    <div class="analyrics">
+                        Social Media<span>Reviews</span>
+                    </div>
+                    <div class="analyrics">
+                        1 Free<span>Optimization</span>
+                    </div>
+                    <div class="analyrics">
+                        24/7 <span>Support</span>
+                    </div>
+
+                    <div class="grey_line">
+                    </div>
+                    <button>Subscribe</button>
+
+                </div>
+
+                <div class="card_pricing">
+                    <div class="basic">
+                        <p>Basic</p>
+                    </div>
+
+                    <h5>$ 39.99</h5>
+                    <span>PER MONTH</span>
+                    <div class="grey_line">
+                    </div>
+                    <div class="analyrics">
+                        25 Analytics<span>Campaign</span>
+                    </div>
+                    <div class="analyrics">
+                        1,300 Change<span>Keywords</span>
+                    </div>
+                    <div class="analyrics">
+                        Social Media<span>Reviews</span>
+                    </div>
+                    <div class="analyrics">
+                        1 Free<span>Optimization</span>
+                    </div>
+                    <div class="analyrics">
+                        24/7 <span>Support</span>
+                    </div>
+
+                    <div class="grey_line">
+                    </div>
+                    <button>Subscribe</button>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="banner_container">
+        <div class="content">
+            <div class="heading">
+                <div class="contents">
+                    <div class="headings">
+
+                        <h1 class="mt-2">SEO to Improve Brand
+                            <br>Visibility
+                        </h1>
+                        <div class="line2"></div>
+                        <p class="mt-2">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+
+                            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.</p>
+                    </div>
+                    <div class="img">
+                        <img src="img/banner_image_2.svg" width="500px">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="services">
+        <div class="section_content">
+            <p>OUR BLOG</p>
+            <h1>Read Latest News</h1>
+
+        </div>
+        <div class="line"></div>
+        <div class="inner_section">
+            <div class="second_section">
+                <div class="seo_consultancy">
+                    <div class="seo_consultancy_img">
+                        <img width="300px" src="img/blog-1.jpg">
+                    </div>
+                    <h4>Source of Content Inspiration</h4>
+                    <div class="post_date">
+                        posted on<a href=#>27 jan 2021</a>
+
+                    </div>
+                </div>
+                <div class="seo_consultancy">
+                    <div class="seo_consultancy_img">
+                        <img width="300px" src="img/blog-2.jpg">
+                    </div>
+                    <h4>Source of Content Inspiration</h4>
+                    <div class="post_date">
+                        posted on<a href=#>27 jan 2021</a>
+                    </div>
+
+
+                </div>
+                <div class="seo_consultancy">
+                    <div class="seo_consultancy_img">
+                        <img width="300px" src="img/blog-3.jpg">
+                    </div>
+                    <h4>Source of Content Inspiration</h4>
+                    <div class="post_date">
+                        posted on<a href=#>27 jan 2021</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="seo_btn">
+        <button class="seo_button">Read More</button>
+    </div>
+
+    <div class="footer">
+        <div class="content_footer">
+            <div class="footer_header">
+                <h1>
+                    SEOGram
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero amet, repellendus eius blanditiis in
+                    iusto eligendi iure.
+                </p>
+                <div>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-google"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                </div>
+            </div>
+            <div class="footer_content">
+                <h1>
+                    Company
+                </h1>
+                <p>About Us</p>
+                <p>Career</p>
+                <p>Advertise</p>
+                <p>Terms of Service</p>
+                <p>Help & Support</p>
+            </div>
+            <div class="footer_content" style="margin-left: 50px;">
+                <h1>
+                    Contact Us
+                </h1>
+                <div class="contact_us">
+                    <p>
+                        203 Fake St. Mountain View, San Francisco, California, USA
+                    </p>
+                    <p>
+                        +00 1122 3344 5566
+                    </p>
+                    <p>
+                        email@domain.com
+                    </p>
+                </div>
+
+            </div>
+            <div class="footer_content">
+                <h1>
+                    Newsletter
+                </h1>
+                <p>Get updates, news or events on your mail.</p>
+                <input type="text" placeholder="Enter your Email">
+                <button class="subscribe_btn">Subscribe</button>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
